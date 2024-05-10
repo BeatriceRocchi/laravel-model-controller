@@ -1,0 +1,12 @@
+header .navbar-custom {
+    background-color: $primary-color;
+
+    .nav-link {
+        color: $white-color;
+
+        &:hover {
+            background-color: rgba($white-color, 0.3);
+            color: $primary-color-dark;
+        }
+    }
+}
