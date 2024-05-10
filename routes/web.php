@@ -20,4 +20,4 @@ Route::get('/critically-acclaimed-movies', [PageController::class, 'bestMovies']
 
 Route::get('/90s-movies', [PageController::class, 'recentMovies'])->name('recent-movies');
 
-Route::get('/new-page', [PageController::class, 'newPage'])->name('new-page');
+Route::get('/movie-details/{id}', [PageController::class, 'movieDetails'])->name('movie-details');

@@ -8,7 +8,7 @@
                 <div class="col my-3">
                     <div class="card">
                         <div class="card-header text-center fw-semibold">
-                            {{ $movie->title }}
+                            <a href="{{ route('movie-details', ['id' => $movie->id]) }}">{{ $movie->title }}</a>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Original title: {{ $movie->original_title }}</li>
