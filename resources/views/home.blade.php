@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>Movies List</h1>
+    <h1>{{ $title }}</h1>
     <div class="container">
         <div class="row row-cols-4">
             @foreach ($movies as $movie)

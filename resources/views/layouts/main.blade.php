@@ -9,7 +9,7 @@
     {{-- Styles --}}
     @vite('resources/js/app.js')
 
-    <title>Template</title>
+    <title>Movies</title>
 </head>
 
 <body>
