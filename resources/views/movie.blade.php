@@ -9,10 +9,13 @@
             <div class="ps-5">
                 <h1>{{ $movie->title }}</h1>
                 <ul class="fs-3 list-unstyled">
-                    <li><span class="fw-semibold">Original title: </span>{{ $movie->original_title }}</li>
-                    <li><span class="fw-semibold">Language: </span>{{ $movie->nationality }}</li>
-                    <li><span class="fw-semibold">Date: </span>{{ $movie->date }}</li>
-                    <li><span class="fw-semibold">Vote: </span>{{ $movie->vote }}</li>
+                    <li><i class="fa-solid fa-ticket"></i><span class="fw-semibold ps-2">Original title:
+                        </span>{{ $movie->original_title }}</li>
+                    <li><i class="fa-solid fa-language"></i><span class="fw-semibold ps-2">Language:
+                        </span>{{ $movie->nationality }}</li>
+                    <li><i class="fa-regular fa-calendar"></i><span class="fw-semibold ps-2">Date:
+                        </span>{{ $movie->date }}</li>
+                    <li><i class="fa-solid fa-star"></i><span class="fw-semibold ps-2">Vote: </span>{{ $movie->vote }}</li>
                 </ul>
 
             </div>
