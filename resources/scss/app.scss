@@ -2,9 +2,10 @@
 @import "~bootstrap/scss/bootstrap";
 
 //Import partials scss files
+@import "./partials/variables";
 @import "./partials/general";
 @import "./partials/typography";
 @import "./partials/utilies";
-@import "./partials/variables";
 @import "./partials/header";
 @import "./partials/main";
+@import "./partials/footer";
