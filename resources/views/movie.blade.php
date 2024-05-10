@@ -2,17 +2,21 @@
 
 @section('content')
     <div class="container">
-        <h1>{{ $movie->title }}</h1>
-        <div class="card">
-            <div class="card-header text-center fw-semibold">
-                {{ $movie->title }}
+        <div class="d-flex">
+            <div class="img-box">
+                <img src="{{ $movie->img }}" alt="{{ $movie->title }}">
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Original title: {{ $movie->original_title }}</li>
-                <li class="list-group-item">Language: {{ $movie->nationality }}</li>
-                <li class="list-group-item">Date: {{ $movie->date }}</li>
-                <li class="list-group-item">Vote: {{ $movie->vote }}</li>
-            </ul>
+            <div class="ps-5">
+                <h1>{{ $movie->title }}</h1>
+                <ul class="fs-3 list-unstyled">
+                    <li><span class="fw-semibold">Original title: </span>{{ $movie->original_title }}</li>
+                    <li><span class="fw-semibold">Language: </span>{{ $movie->nationality }}</li>
+                    <li><span class="fw-semibold">Date: </span>{{ $movie->date }}</li>
+                    <li><span class="fw-semibold">Vote: </span>{{ $movie->vote }}</li>
+                </ul>
+
+            </div>
+
         </div>
     </div>
 @endsection
